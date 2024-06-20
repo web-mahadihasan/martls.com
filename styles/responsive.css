@@ -56,5 +56,28 @@
     .product-card-container{
         grid-template-columns: repeat(auto-fit, minmax(230px, auto));
     }
+
+    /* client review responsive  */
+    .client-review-container{
+        height: 110vh;
+    }
+    .review-container{
+        max-width: 85%;
+    }
+    .review-title{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .review-container .client-img{
+        width: 90px;
+        height: 90px;
+        margin-bottom: .7rem;
+    }
+    .review-container .right-arrow{
+        top: 85%;
+    }
+    .review-container .left-arrow{
+        top: 85%;
+    }
 }
 

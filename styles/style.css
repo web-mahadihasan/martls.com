@@ -18,7 +18,7 @@
 }
 
 /* navbar styles start */
-html{
+body{
     scroll-behavior: smooth;
 }
 header{
@@ -311,3 +311,94 @@ header.sticky{
     vertical-align: middle;
 }
 /* product section styles ends */
+
+/* client review section styles */
+.client-review-container{
+    width: 100%;
+    background-color: var(--light-gray);
+    margin-top: 3rem;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.review-container{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.review-title{
+    font-size: 2.5rem;
+    color: var(--dark-black);
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+.review-container .client-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--dark-gray);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.review-container .client-says{
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+.review-container .client-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+.review-container .client-title{
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+}
+.review-container .arrow{
+    position: absolute;
+    padding: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-gray);
+    color: var(--dark-black);
+    display: flex;
+    align-items: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.review-container .arrow:hover{
+    background-color: var(--dark-gray);
+    color: var(--primary-white);
+}
+.review-container .right-arrow{
+    font-size: 1.8rem;
+    top: 50%;
+    right: 10%;
+}
+.review-container .left-arrow{
+    font-size: 1.8rem;
+    top: 50%;
+    left: 10%;
+}
+/* client review section styles ends*/
+
+/* news updates section styles  */
+.news-update-container{
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.news-container-title{
+    text-align: center; 
+}
+.news-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin-top: 1.8rem;
+}
+.news-cards-container .news-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* news updates section styles ends */
