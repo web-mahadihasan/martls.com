@@ -14,11 +14,8 @@
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
     list-style: none;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
-/* shared styles  */
-
-/* shared styles ends */
 
 /* navbar styles start */
 html{
@@ -30,11 +27,7 @@ header{
     position: sticky;
     transition: all .4s ease-in-out;;
 }
-/* header{
-    width: 90%;
-    height: 100vh;
-    margin: auto;
-} */
+
 nav {
     width: 100%;
     padding: 1.25rem 8%;
@@ -59,6 +52,7 @@ nav .logo img{
     color: var(--dark-gray);
     position: relative;
     font-weight: 500;
+    text-decoration: none;
 }
 .navlinks ul li a::after{
     content: "";
@@ -109,8 +103,6 @@ header.sticky{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: -1;
 }
 .banner-text-container{
     width: 85%;
@@ -143,6 +135,7 @@ header.sticky{
     transition: .5s ease-in-out;
     border-radius: 4px;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .banner-btn i{
     vertical-align: middle;
@@ -166,12 +159,13 @@ header.sticky{
     right: 15%;
     bottom: 15%;
     transition: .4s ease-in-out;
-    color: var(--dark-gray);
+    color: var(--primary-white);
+    background-color: var(--dark-gray);
 }
 
 .banner-arrow i:hover{
-    background-color: var(--dark-gray);
-    color: var(--primary-white);
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
 }
 
 /* product section styles start  */
@@ -191,10 +185,26 @@ header.sticky{
 }
 .product-card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
+}
+.product-img{
+    position: relative;
 }
 .product-img img{
     width: 100%;
+    height: auto;
+}
+.product-stock{
+    background-color: #26de81;
+    width: 75px;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--primary-white);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-weight: 500;
+    cursor: pointer;
 }
 /* product section styles ends */

@@ -9,7 +9,7 @@
         width: 100%;
         height: 100vh;
         background-color: var(--light-gray);
-        z-index: 50;
+        z-index: ;
         transition: .6s ease-in-out;
     }
     .navlinks ul{
@@ -22,17 +22,17 @@
         font-weight: 500;   
     }
     .navicons {
-        z-index: 99;
+        z-index: 5;
     }
     .navicons .bx-menu{
         display: block;
-        z-index: 99;
+        z-index: 5;
     }
     .navicons i{
         padding: 0px 10px;
     }
     nav .logo {
-        z-index: 99;
+        z-index: 5;
     }
     nav .logo img{
         width: 120px;
