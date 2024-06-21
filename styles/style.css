@@ -18,8 +18,9 @@
 }
 
 /* navbar styles start */
-body{
-    scroll-behavior: smooth;
+html, body{
+    scroll-behavior: smooth!important;
+    scroll-padding: 7rem;
 }
 header{
     background-color: var(--light-gray);
@@ -118,9 +119,6 @@ header.sticky{
     color: var(--dark-gray);
     font-size: 4rem;
     font-weight: 700;
-    /* background-image: linear-gradient(to right, #d73ec1, #d534c7, #d129ce, #cd1dd6, #c70cde); */
-    /* -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
 }
 .banner-info{
     color: rgba(62, 63, 67, 0.6);
@@ -439,19 +437,57 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 2rem;
-    align-items: center;
-    justify-items: space-between;
     padding-top: 60px;
     padding-bottom: 80px;
 }
-
-
-
+.footer-title{
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom: .7rem;
+    text-transform: capitalize;
+}
+.footer-text{
+    font-size: 1.12rem;
+    color: var(--dark-gray);
+    margin: .3rem 0rem;
+    text-decoration: none;
+    display: block;
+}
+.company-contacts img{
+    width: 150px;
+    cursor: pointer;
+}
+.company-contacts address{
+    font-size: 1.12rem;
+    margin: 1rem 0rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+.company-contacts .phone-number{
+    font-size: 1.12rem;
+    color: var(--dark-gray);
+}
+.company-contacts .social-icons i{
+    font-size: 1.5rem;
+    margin-right: .7rem;
+    color: var(--dark-gray);
+    transition: .4s ease;
+    margin-top: .8rem;
+    cursor: pointer;
+}
+.company-contacts .social-icons i:hover{
+    color: var(--hover-color);
+    transform: translateY(-5px);
+}
+.subscribe-section p{
+    margin-bottom: 1rem;
+}
 .copyright-section{
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f4f2f2;
+    padding: 0px 8%;
 }
 /* footer section styles ends  */
