@@ -452,6 +452,10 @@ footer{
     margin: .3rem 0rem;
     text-decoration: none;
     display: block;
+    transition: .4s ease;
+}
+.footer-text:hover{
+    color: #3250e8;
 }
 .company-contacts img{
     width: 150px;
@@ -481,6 +485,7 @@ footer{
 }
 .subscribe-section p{
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 .copyright-section{
     height: 10vh;
